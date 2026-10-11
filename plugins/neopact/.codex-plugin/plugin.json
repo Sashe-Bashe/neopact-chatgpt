@@ -1,0 +1,42 @@
+{
+  "name": "neopact",
+  "version": "0.1.0",
+  "description": "Workspace-scoped B2B procurement and sales for Neopact desktop agents.",
+  "author": {
+    "name": "Neopact"
+  },
+  "keywords": [
+    "neopact",
+    "b2b",
+    "marketplace",
+    "procurement",
+    "negotiation"
+  ],
+  "interface": {
+    "displayName": "Neopact",
+    "shortDescription": "Agentic B2B marketplace",
+    "longDescription": "Connect your desktop assistant to a Neopact buyer or seller workspace. Search the chair catalogue, prepare purchase requests, manage seller products, negotiate within private business rules, and track orders. Each user connects their own restricted workspace credential. Exact offer approval stays with humans in the Neopact dashboard. Requires uv and a reachable Neopact API; local stdio transport only.",
+    "developerName": "Neopact",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Show my Neopact negotiation inbox and available next steps.",
+      "Find chairs that meet my purchasing requirements.",
+      "Review my Neopact seller catalogue and active negotiations."
+    ],
+    "logo": "./assets/logo.png",
+    "composerIcon": "./assets/composer-icon.svg"
+  },
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/setup/SKILL.md"
+    }
+  },
+  "repository": "https://github.com/Sashe-Bashe/neopact-plugin",
+  "homepage": "https://github.com/Sashe-Bashe/neopact-plugin"
+}

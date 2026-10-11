@@ -1,0 +1,20 @@
+{
+  "name": "neopact",
+  "interface": {
+    "displayName": "Neopact"
+  },
+  "plugins": [
+    {
+      "name": "neopact",
+      "source": {
+        "source": "local",
+        "path": "./plugins/neopact"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
