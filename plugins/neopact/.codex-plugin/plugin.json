@@ -1,6 +1,6 @@
 {
   "name": "neopact",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Workspace-scoped B2B procurement and sales for Neopact desktop agents.",
   "author": {
     "name": "Neopact"
@@ -13,7 +13,7 @@
     "negotiation"
   ],
   "interface": {
-    "displayName": "Neopact",
+    "displayName": "Neopact for ChatGPT",
     "shortDescription": "Agentic B2B marketplace",
     "longDescription": "Connect your desktop assistant to a Neopact buyer or seller workspace. Search the chair catalogue, prepare purchase requests, manage seller products, negotiate within private business rules, and track orders. Each user connects their own restricted workspace credential. Exact offer approval stays with humans in the Neopact dashboard. Requires uv and a reachable Neopact API; local stdio transport only.",
     "developerName": "Neopact",
@@ -37,6 +37,6 @@
       "onboardingSkill": "./skills/setup/SKILL.md"
     }
   },
-  "repository": "https://github.com/Sashe-Bashe/neopact-plugin",
-  "homepage": "https://github.com/Sashe-Bashe/neopact-plugin"
+  "repository": "https://github.com/Sashe-Bashe/neopact-chatgpt",
+  "homepage": "https://github.com/Sashe-Bashe/neopact-chatgpt"
 }

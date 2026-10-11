@@ -1,4 +1,4 @@
-# Neopact plugin guide
+# Neopact for ChatGPT
 
 Use a desktop assistant with your own Neopact buyer or seller workspace. Search products, create purchase requests, maintain seller listings, negotiate supported terms, and read orders. Humans approve exact offers in the dashboard.
 
@@ -9,7 +9,7 @@ You need Codex, [uv](https://docs.astral.sh/uv/getting-started/installation/) on
 Install from the repository's marketplace:
 
 ```sh
-codex plugin marketplace add Sashe-Bashe/neopact-plugin
+codex plugin marketplace add Sashe-Bashe/neopact-chatgpt
 codex plugin add neopact@neopact
 ```
 
@@ -18,8 +18,8 @@ Restart Codex or start a new chat, then ask **“Run Neopact setup.”** The ski
 For direct manual setup, run these commands from a terminal:
 
 ```sh
-git clone https://github.com/Sashe-Bashe/neopact-plugin.git
-cd neopact-plugin
+git clone https://github.com/Sashe-Bashe/neopact-chatgpt.git
+cd neopact-chatgpt
 uv run --project plugins/neopact/server --locked --no-dev python plugins/neopact/scripts/configure.py
 ```
 
@@ -74,9 +74,9 @@ Register a stdio server using the absolute path to this plugin directory in your
     "neopact": {
       "command": "uv",
       "args": [
-        "run", "--project", "/absolute/path/neopact-plugin/plugins/neopact/server",
+        "run", "--project", "/absolute/path/neopact-chatgpt/plugins/neopact/server",
         "--locked", "--no-dev", "python",
-        "/absolute/path/neopact-plugin/plugins/neopact/scripts/launch.py"
+        "/absolute/path/neopact-chatgpt/plugins/neopact/scripts/launch.py"
       ]
     }
   }

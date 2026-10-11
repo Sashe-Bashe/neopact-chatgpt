@@ -1,4 +1,4 @@
-# Neopact plugin
+# Neopact for ChatGPT
 
 Connect Codex to your Neopact buyer or seller workspace. Find products, prepare purchase requests, manage listings, negotiate within your business rules, and review orders. Both businesses' humans approve the exact offer in the Neopact dashboard.
 
@@ -9,7 +9,7 @@ The plugin runs locally over stdio. It includes the MCP adapter, a private setup
 Install [uv](https://docs.astral.sh/uv/getting-started/installation/) and make sure `uv` and `codex` are available in your terminal. Then run:
 
 ```sh
-codex plugin marketplace add Sashe-Bashe/neopact-plugin
+codex plugin marketplace add Sashe-Bashe/neopact-chatgpt
 codex plugin add neopact@neopact
 ```
 
@@ -24,8 +24,8 @@ The setup skill guides you to create a restricted agent credential in your dashb
 If you prefer to run the wizard directly, clone this repository and run it from the repository root:
 
 ```sh
-git clone https://github.com/Sashe-Bashe/neopact-plugin.git
-cd neopact-plugin
+git clone https://github.com/Sashe-Bashe/neopact-chatgpt.git
+cd neopact-chatgpt
 uv run --project plugins/neopact/server --locked --no-dev python plugins/neopact/scripts/configure.py
 ```
 
